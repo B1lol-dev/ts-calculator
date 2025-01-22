@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --general_white: #ffffff;
+
+  --bg: #f1f2f3;
+  --text: #000000;
+  --blue: #4b5efc;
+  --md_white: #d2d3da;
+  --low_white: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 355px;
+  width: 100%;
+  padding-inline: 20px;
+  margin: 0 auto;
+}
+
+.dark_theme {
+  --bg: #17171c;
+  --text: #ffffff;
+  --blue: #4b5efc;
+  --md_white: #4e505f;
+  --low_white: #2e2f38;
+}
+
+#app {
+  background: var(--bg);
+  display: flex;
+  height: 100vh;
+  align-items: end;
+  padding-bottom: 66px;
+  justify-content: center;
+  position: relative;
+  transition: 0.2s ease-in-out;
+
+  & .theme_switcher {
+    height: 32px;
+    width: 72px;
+    background: var(--low_white);
+    border-radius: 1rem;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-inline: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    & .theme_switcher_item {
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: var(--md_white);
+      position: absolute;
+      margin-inline: 4px;
+      left: 0;
+    }
+  }
+
+  & .container {
+    & .calculator_content {
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* align-items: end; */
+
+      & .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+
+        #text_top {
+          font-size: 40px;
+          font-weight: 100;
+          color: var(--text);
+          filter: opacity(0.4);
+        }
+
+        #main_text {
+          font-weight: 100;
+          font-size: 86px;
+          line-height: 96px;
+          color: var(--text);
+        }
+      }
+
+      & .btns_wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-top: 1rem;
+
+        & button {
+          height: 72px;
+          width: 72px;
+          border-radius: 24px;
+          background: var(--low_white);
+          font-size: 2rem;
+          line-height: 40px;
+          transition: 0.2s ease-in-out;
+          color: var(--text);
+
+          &:active {
+            transform: scale(0.95);
+          }
+
+          &.btn_blue {
+            background: var(--blue);
+            color: var(--general_white);
+          }
+
+          &.btn_gray {
+            background: var(--md_white);
+          }
+        }
+      }
+    }
+  }
+}
