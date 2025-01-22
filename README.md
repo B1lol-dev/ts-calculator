@@ -4,7 +4,11 @@ This is a TypeScript simple calculator.
 
 ## Installation
 
-To install the project dependencies, run the following command:
+To install the project run the following commands:
+
+```
+git clone https://github.com/B1lol-dev/ts-calculator
+```
 
 ```
 npm install
@@ -15,7 +19,7 @@ npm install
 To start the calculator, run the following command:
 
 ```
-npm start
+npm run dev
 ```
 
 ## Features
@@ -24,10 +28,6 @@ npm start
 - Subtraction
 - Multiplication
 - Division
-
-## Contributing
-
-Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md).
 
 ## License
 
