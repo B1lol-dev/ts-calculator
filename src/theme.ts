@@ -2,8 +2,6 @@ export function themeSwitcher(): void {
   const app: HTMLDivElement | any =
     document.querySelector<HTMLDivElement>("#app");
 
-  // let currentTheme: string = localStorage.getItem("currentTheme") || "light";
-
   const theme_switcher: HTMLDivElement | any =
     document.querySelector<HTMLDivElement>(".theme_switcher");
 
