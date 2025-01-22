@@ -7,7 +7,7 @@ This is a TypeScript simple calculator.
 To install the project run the following commands:
 
 ```
-git clone https://github.com/B1lol-dev/ts-calculator
+git clone https://github.com/B1lol-dev/ts-calculator.git
 ```
 
 ```
