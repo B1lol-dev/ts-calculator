@@ -11,6 +11,10 @@ git clone https://github.com/B1lol-dev/ts-calculator
 ```
 
 ```
+cd ts-calculator
+```
+
+```
 npm install
 ```
 
